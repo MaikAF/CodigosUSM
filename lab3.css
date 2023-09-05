@@ -1,0 +1,31 @@
+body{
+    background-color: blue;
+}
+nav{
+    background-color: #85D4B7;
+}
+footer{
+    font: bold;
+    color: black;
+}
+#coaching{
+    background-color: white;
+    margin-top: 0%;
+    padding: 5%;
+}
+#caja1{
+    background-color: blueviolet;
+    text-align: right;
+    width: 500px;
+    height: 300px;
+    margin:0%;
+    float: left;
+}
+
+#knoflook{
+    clear: both;
+}
+#caja2{
+    margin: 500px;
+    background-color: bisque;
+}

@@ -1,65 +1,62 @@
-p, .special {
-    color: rgb(225, 239, 230);
-    background-color: rgb(0, 4, 17);
-  }
+
 li{
     list-style-type: none;
   }
 
+body{
+    background-image: url(https://media.tenor.com/M4SDYNMM_L4AAAAM/werewolf-moonlight.gif);
+    background-size: auto;
+}
 
 header {
         font-size: larger;
         font-family:Arial, Helvetica, sans-serif;
-        padding-top: 10px;    /* Agrega 10px de padding en la parte superior */
-        padding-right: 30px;  /* Agrega 30px de padding en el lado derecho */
-        padding-bottom: 15px; /* Agrega 15px de padding en la parte inferior */
-        padding-left: 5px;    /* Agrega 5px de padding en el lado izquierdo */
-        background-color: rgb(239, 203, 104);
-        border-style: groove;
-        border-width: 5px;
+        color: white;
+        padding-top: 1px;    
+        padding-right: 1px; 
+        padding-bottom: 1px; 
+        padding-left: 1px;
+        width: 980px;
+        height: 150px;  
+        background-color: #222A35;
       }
-      
-section {
-    font-size: large;
+
+nav {
+        font-size: larger;
+        font-family:Arial, Helvetica, sans-serif;
+        color: black;
+        padding-top: 1px;    
+        padding-right: 1px; 
+        padding-bottom: 1px; 
+        padding-left: 1px;
+        width: 980px;
+        height: 70px;  
+        background-color: #CDDC39;
+      }
+aside{
+    font-size: small;
     font-family:Arial, Helvetica, sans-serif;
-    padding-top: 10px;    /* Agrega 10px de padding en la parte superior */
-    padding-right: 30px;  /* Agrega 30px de padding en el lado derecho */
-    padding-bottom: 15px; /* Agrega 15px de padding en la parte inferior */
-    padding-left: 5px;    /* Agrega 5px de padding en el lado izquierdo */
-    background-color: rgb(60, 33, 110);
-    border-style: groove;
-    border-width: 5px;
-    }
-aside {
-    padding-top: 10px;    /* Agrega 10px de padding en la parte superior */
-    padding-right: 30px;  /* Agrega 30px de padding en el lado derecho */
-    padding-bottom: 15px; /* Agrega 15px de padding en la parte inferior */
-    padding-left: 5px;    /* Agrega 5px de padding en el lado izquierdo */
-    background-color: rgb(224, 211, 222);
-    border-style: groove;
-    border-width: 5px
-}
-article {
-    font-size:small;
+    color: white;
+    padding-top: 1px;    
+    padding-right: 1px; 
+    padding-bottom: 1px; 
+    padding-left: 1px;
+    width: 300px;
+    height: 450px;  
+    background-color: #757575;
+  }
+.caja1{
+    font-size: small;
     font-family:Arial, Helvetica, sans-serif;
-    padding-top: 10px;    /* Agrega 10px de padding en la parte superior */
-    padding-right: 30px;  /* Agrega 30px de padding en el lado derecho */
-    padding-bottom: 15px; /* Agrega 15px de padding en la parte inferior */
-    padding-left: 5px;    /* Agrega 5px de padding en el lado izquierdo */
-    background-color: rgb(195, 60, 84);
-    border-style: groove;
-    border-width: 5px;
-}
-ul {
-    font-size:small;
-    font-family:Arial, Helvetica, sans-serif;
-    padding-top: 10px;    /* Agrega 10px de padding en la parte superior */
-    padding-right: 30px;  /* Agrega 30px de padding en el lado derecho */
-    padding-bottom: 15px; /* Agrega 15px de padding en la parte inferior */
-    padding-left: 5px;    /* Agrega 5px de padding en el lado izquierdo */
-    background-color: rgb(142, 227, 239);
-    border-style: groove;
-    border-width: 5px;
+    color: white;
+    padding-top: 1px;    
+    padding-right: 1px; 
+    padding-bottom: 1px; 
+    padding-left: 1px;
+    width: 100px;
+    height: 100px;  
+    background-color: #CDDC39;
+    margin: 20px;
 }
 
 footer {
@@ -72,4 +69,5 @@ footer {
     background-color: rgb(60, 226, 198);
     border-style: groove;
     border-width: 5px;
+    margin-right: 1000px;
 }
