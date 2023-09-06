@@ -1,0 +1,39 @@
+.btn{
+    background-color: #6C757d;
+}
+.btn:hover{
+    background-color: #f6c270;
+}
+
+#galeria{
+    margin: 30px; 
+    padding: 20px;
+
+}
+
+#nosotros{
+    margin: 20px;
+}
+
+#Contacto{
+
+    background-color: #f25252; 
+    height: 100px;   
+    padding-left: 50%;
+}
+#footer{
+    background-color: #f25252;
+    height: 50px;
+    padding-left: 45%;
+    margin-top: 20px;
+}
+
+#footer2{
+ background-color:#f25252;
+ height: 100px;
+ padding-left: 45% ;
+}
+.card{
+    margin: 3%;
+}
+
