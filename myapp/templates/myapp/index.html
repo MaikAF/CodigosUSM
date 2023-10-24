@@ -1,0 +1,64 @@
+{% extends 'myapp/base.html' %}
+
+{% block content %}
+
+{% include 'myapp/navbar.html' %}
+
+
+<title>{{title}}</title>
+<form action="{% url 'nuevo' %}" method="GET">
+    {% csrf_token %}
+    <div class="container-fluid">
+        <select class="form-select" aria-label="Default select example" name="Depto">
+            <option selected>Departamentos</option>
+            {% for c in entidades %}
+                <option value="{{ c }}">{{c}}</option>
+            {% endfor %}
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary" style="margin: 20px">Filtrar</button>
+    
+    <div class="container-fluid">
+        <div class="row">
+            {% for c in comunicados %}
+            {%if c.visible%}
+            <div class="col-md-4 d-xxl-none" >
+                <div class="card" style="margin-bottom: 20px;">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ c.titulo }}</h5>
+                        <h6 class="card-subtitle text-muted">{{ c.entidad }}</h6>
+                        <p class="card-text">{{ c.detalle_corto }}</p>
+                    </div>
+                </div>
+            </div>
+            {%endif%}
+            {% endfor %}
+            
+        </div>
+    </div>
+
+    <div class="container-fluid d-flex align-items-center" >
+        <div id="car" class="carousel slide mx-auto d-none d-xxl-block" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                {% for c in comunicados %}
+                    <div class="carousel-item {% if forloop.first %}active{% endif %}">
+                        <h5 class="card-title">{{ c.titulo }}</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">{{ c.entidad }}</h6>
+                        <p class="card-text">{{ c.detalle_corto }}</p>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#car" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon">Atras</span>
+            
+        </a>
+        <a class="carousel-control-next" href="#car" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" >Siguiente</span>
+    
+        </a>        
+    </div>
+
+</form>
+
+{% endblock %}

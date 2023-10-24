@@ -1,0 +1,17 @@
+#logo{
+    width: 100px;
+}
+
+.card{
+    margin: 30px;
+}
+
+.btn btn-primary{
+    margin: 10px;
+}
+
+.carousel-control-prev, .carousel-control-next{
+    background-color: aqua;
+    height: 40px;
+    margin-top: 30%;
+}
